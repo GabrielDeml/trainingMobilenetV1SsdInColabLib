@@ -39,7 +39,7 @@ source "$PWD/constants.sh"
 mkdir -p "${TRAIN_DIR}"
 
 python object_detection/model_main.py \
-  --pipeline_config_path="${CKPT_DIR}/pipeline.config" \
+  --pipeline_config_path="./configs/pipeline_mobilenet_v1_ssd_retrain_last_few_layers.config" \
   --model_dir="${TRAIN_DIR}" \
   --num_train_steps="${num_training_steps}" \
   --num_eval_steps="${num_eval_steps}"
