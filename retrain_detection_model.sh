@@ -36,7 +36,7 @@ done
 
 source "$PWD/constants.sh"
 
-mkdir "${TRAIN_DIR}"
+mkdir -p "${TRAIN_DIR}"
 
 python object_detection/model_main.py \
   --pipeline_config_path="${CKPT_DIR}/pipeline.config" \
