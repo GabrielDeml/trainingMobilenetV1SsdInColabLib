@@ -1,5 +1,12 @@
 #!/bin/bash
 
+OBJ_DET_DIR="$PWD"
+LEARN_DIR="${OBJ_DET_DIR}/learn_pet"
+DATASET_DIR="${LEARN_DIR}/pet"
+CKPT_DIR="${LEARN_DIR}/ckpt"
+TRAIN_DIR="${LEARN_DIR}/train"
+OUTPUT_DIR="${LEARN_DIR}/models"
+
 # Exit script on error.
 set -e
 # Echo each command, easier for debugging.
